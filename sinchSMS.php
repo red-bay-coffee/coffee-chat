@@ -33,3 +33,8 @@ curl_close($ch);
 
 //Final Output
 echo "\n Your message was sent.";
+
+//Error Logs
+if (strpos($ch,'errorCode') !== false) {
+    echo "It looks like something has gone wrong. Please try again or DM @rolandobrown.";
+}
